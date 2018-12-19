@@ -33,8 +33,9 @@ body
                 p.card-text
                 h2.text LET'S LEARN!
                 form(action='/studyguide' method="POST")
-                    input(type="text" placeholder="question")
-                    button.btn(type="button")  LETS GO!
+                    input(type="text" placeholder="question" name="question")
+                    input(type="text" placeholder="answer" name="answer")
+                    button.btn(type="submit")  LETS GO!
                 
         .container
             
