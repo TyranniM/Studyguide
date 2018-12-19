@@ -1,0 +1,48 @@
+.card{
+    margin-left:30%;
+    padding: 5px;
+   display: flex;
+   justify-content: center;
+   position: relative;
+    border:5px;
+  padding:30px; 
+    border-style: solid;
+    height:50%;
+    width:50%;
+    border-color: rgb(54, 52, 52);
+    background-color: rgba(126, 119, 119, 0.5);
+    border-radius: 12px;
+    transform-origin: center right;
+  }
+  
+  .input{
+      height:2% !important;
+      padding: 7px;
+  }
+.jumbotron{
+      background:#C85073;
+      color:rgb(54, 52, 52);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+  }
+  .btn{
+      margin-left:60%;
+      border:solid 1px;
+      height:10%;
+      margin-top:5%;
+  }
+  .btn:hover {
+    background-color:#C85073;
+    color: rgb(54, 52, 52);
+}
+.card-title{
+    font-size:30px;
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+
+ 
+
+ 
