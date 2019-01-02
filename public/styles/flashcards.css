@@ -15,9 +15,12 @@
     transform-origin: center right;
   }
   
-  .input{
-      height:2% !important;
-      padding: 7px;
+  .box{
+      
+      padding: 5px;
+      justify-content: center;
+      position: relative;
+      
   }
 .jumbotron{
       background:#C85073;

@@ -5,7 +5,6 @@ head
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css")
     link(rel="stylesheet", href="/styles/flashcards.css")
-    script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
     
     title Study Guide
 
@@ -25,28 +24,41 @@ body
     //-                 button(class="btn" type="submit") Submit 
     //- .container2
     //-   input(type="text" placeholder="answer" name="answer")
-    .card(style='width: 30rem;')
+    .card#intro(style='width: 30rem;')
         .card-body
             h5.card-title Coding and Javascript
                 p.card-text
                 h2.text Ready To Study?
                 p.card-text
                 h2.text LET'S LEARN!
-                form(action='/studyguide' method="POST")
-                    input(type="text" placeholder="question" name="question")
-                    input(type="text" placeholder="answer" name="answer")
-                    button.btn(type="submit")  LETS GO!
+        button.btn#letsGo(type='button') Let's Go!
+
+    .card#studyCard(style='width: 30rem;')
+        .card-body
+            h5.card-title Coding and Javascript
+                p.card-text
+                h2.text#question
+                p.card-text
+                h2.text#answer
+                button.btn#nextcard(type='button') Next Card   
+                
+    form(action='/studyguide' method="POST")
+        input.box(type="text" placeholder="question" name="question")
+        input.box(type="text" placeholder="answer" name="answer")
+        button.btn(type="submit")  Add Card
                 
         .container
             
-            h1(id="q1") 
-            h1(id="q2") 
-            h1(id="q3")           
+            //- h1(id="q1") 
+            //- h1(id="q2") 
+            //- h1(id="q3")    
+               
   
 //- button(class="btn" type="submit") Submit
         
 
+script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
 
-script(src="/flashcardscripts/scripts.js")
+script(src="/scripts/scripts.js")
 
 
