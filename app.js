@@ -18,16 +18,16 @@ MongoClient.connect("mongodb://sandbox:sandbox1@ds141932.mlab.com:41932/studygui
 })
 
 app.get("/",(req,res) => {
-         res.render("index.pug")
-    })
-    
-app.get("/studyguide",(req,res) => {
-    let cursor = db.collection("flashcards").find().toArray((err, results) => {
-       if (err) return console.log(err)
-       console.log(results)
-       res.send(results)
-    })
+    res.render("index.pug")
 })
+            app.get("/studyguide",(req,res) => {
+                let cursor = db.collection("flashcards").find().toArray((err, results) => {
+                   if (err) return console.log(err)
+                   console.log(results)
+                   res.send(results)
+                })
+            })
+    
 
 
 app.post("/studyguide", (req,res)=> {

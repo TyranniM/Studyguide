@@ -35,15 +35,20 @@ body
 
     .card#studyCard(style='width: 30rem;')
         .card-body
-            h5.card-title Coding and Javascript
                 p.card-text
                 h2.text#question
-                p.card-text
-                h2.text#answer
-                button.btn#nextcard(type='button') Next Card   
+        p.card-text
+        h2.text#answer
+        p.card-text
+        h2.text#stuck
+        button.btn#nextcard(type='button') Next Card 
+        button.btn#hint(type='submit') Hint
+        button.btn#result(type='submit') Answer  
+         
                 
     form(action='/studyguide' method="POST")
         input.box(type="text" placeholder="question" name="question")
+        input.box(type="text" placeholder="hint" name="hint")
         input.box(type="text" placeholder="answer" name="answer")
         button.btn(type="submit")  Add Card
                 
